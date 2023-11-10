@@ -12,7 +12,8 @@ def common_prefix(strs):
         current_string = strs[i]
         j = 0
 
-        while j < min(len(prefix), len(current_string)) and prefix[j] == current_string[j]:
+        mini = min(len(prefix), len(current_string))
+        while j < mini and prefix[j] == current_string[j]:
             j += 1
 
         prefix = prefix[:j]
