@@ -12,3 +12,4 @@ def reverse(x):
 
 print(reverse(1534236469))
 print(reverse(-754))
+print(reverse(500))
