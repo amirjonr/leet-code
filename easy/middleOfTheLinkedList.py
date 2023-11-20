@@ -17,3 +17,7 @@ def middleNode(head: Optional[ListNode]) -> Optional[ListNode]:
 
 
 print(middleNode(ListNode(1, ListNode(2, ListNode(5)))).val)
+
+
+# time complexity O(n)
+# space complexity O(1)
