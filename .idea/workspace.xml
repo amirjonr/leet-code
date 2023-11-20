@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c6a47a5c-3223-4139-a865-876bbe1836ae" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easy/mergeSortedArray.py" beforeDir="false" afterPath="$PROJECT_DIR$/easy/mergeSortedArray.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +98,15 @@
       <workItem from="1699880600849" duration="26000" />
       <workItem from="1699882029196" duration="9000" />
       <workItem from="1699968292847" duration="299000" />
+      <workItem from="1700018009571" duration="2585000" />
+      <workItem from="1700021475129" duration="558000" />
+      <workItem from="1700054053561" duration="5000" />
+      <workItem from="1700058604507" duration="1471000" />
+      <workItem from="1700068693587" duration="599000" />
+      <workItem from="1700191676480" duration="719000" />
+      <workItem from="1700203263253" duration="20000" />
+      <workItem from="1700224961254" duration="5240000" />
+      <workItem from="1700449718646" duration="596000" />
     </task>
     <servers />
   </component>
