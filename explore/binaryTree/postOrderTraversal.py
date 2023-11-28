@@ -16,6 +16,7 @@ class Solution:
             result.extend(self.postOrderTraversal(root.right))
             result.append(root.val)
         return result
+
     def postorderTraversalIterativeSolution(self, root: Optional[TreeNode]) -> List[int]:
         result = []
         stack = []
