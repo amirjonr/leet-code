@@ -17,8 +17,21 @@ class Solution:
             result.append(root.val)
         return result
 
+    def postorderTraversalIterativeSolution(self, root: Optional[TreeNode]) -> List[int]:
+        result = []
+        stack = []
+        while root or stack:
+            while root.left:
+                result.append(root.left)
+                stack.append(root)
+            root = stack.pop(root.left)
+            root = root.val
+
+        return result
+
 
 f = Solution()
 print(f.postOrderTraversal(TreeNode(1, None, TreeNode(2, TreeNode(3)))))
+print(f.postorderTraversalIterativeSolution(TreeNode(1, None, TreeNode(2, TreeNode(3)))))
 
 # TODO all this solutions is trivial, try to solve iteratively
