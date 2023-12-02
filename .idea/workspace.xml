@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6a47a5c-3223-4139-a865-876bbe1836ae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/easy/mergeTwoSortedLists.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/explore/binaryTree/postOrderTraversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/explore/binaryTree/postOrderTraversal.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +114,10 @@
       <workItem from="1701020038190" duration="2942000" />
       <workItem from="1701054606584" duration="4253000" />
       <workItem from="1701092611021" duration="2110000" />
-      <workItem from="1701147488097" duration="5811000" />
+      <workItem from="1701147488097" duration="6224000" />
+      <workItem from="1701233545502" duration="4891000" />
+      <workItem from="1701437131919" duration="4000" />
+      <workItem from="1701520334509" duration="614000" />
     </task>
     <servers />
   </component>
