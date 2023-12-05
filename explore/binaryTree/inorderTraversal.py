@@ -12,12 +12,24 @@ class TreeNode:
 class Solution:
     def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         result = []
-        if root is not None:
+        if root:
             result.extend(self.inorderTraversal(root.left))
             result.append(root.val)
             result.extend(self.inorderTraversal(root.right))
         return result
 
+    def inorderTraversalIterativeSolution(self, root: Optional[TreeNode]) -> List[int]:
+        result, stack = [], []
+        while root or stack:
+            while root:
+                stack.append(root)
+                root = root.left
+            root = stack.pop()
+            result.append(root.val)
+            root = root.right
+        return result
+
 
 func = Solution()
 print(func.inorderTraversal(TreeNode(1, None, TreeNode(2, TreeNode(3)))))
+print(func.inorderTraversalIterativeSolution(TreeNode(1, None, TreeNode(2, TreeNode(3)))))

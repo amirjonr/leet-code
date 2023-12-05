@@ -12,11 +12,12 @@ class TreeNode:
 class Solution:
     def preorderTraversalRecursiveSolution(self, root: Optional[TreeNode]) -> List[int]:
         result = []
-        if root is not None:
+        if root:
             result.append(root.val)
             result.extend(self.preorderTraversalRecursiveSolution(root.left))
             result.extend(self.preorderTraversalRecursiveSolution(root.right))
         return result
+
     def preorderTraversalIterativeSolution(self, root: Optional[TreeNode]) -> List[int]:
         stack = []
         result = []
