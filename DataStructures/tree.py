@@ -36,3 +36,6 @@ tree.children[1].children.append(Tree(9))
 
 tree_dict = tree_to_dict(tree)
 print_tree(tree_dict)
+
+# example of use:
+# file systems

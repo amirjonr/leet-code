@@ -14,7 +14,7 @@ $list->next->next = new LinkedList(3);
 printLinkedList($list);
 
 function printLinkedList(LinkedList $node) {
-    while ($node !== null) {
+    while ($node) {
         echo $node->data . " -> ";
         $node = $node->next;
     }
