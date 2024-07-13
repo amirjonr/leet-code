@@ -4,47 +4,24 @@ with open('input.txt', 'r') as file:
 
 days_of_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
+year_in_sec = end[0] * 365 * 24 * 60 * 60
+month_in_sec = sum(days_of_month[:end[1] - 1]) * 24 * 60 * 60
+day_in_sec = end[2] * 24 * 60 * 60
+hour_in_sec = end[3] * 60 * 60
+min_in_sec = end[4] * 60
+sec_end = year_in_sec + month_in_sec + day_in_sec + hour_in_sec + min_in_sec + end[5]
 
-def countSeconds():
-    end_sec = end[3] * 60 * 60 + end[4] * 60 + end[5]
-    start_sec = start[3] * 60 * 60 + start[4] * 60 + start[5]
-    if end_sec > start_sec:
-        return end_sec - start_sec
-    else:
-        end_sec = 24 * 60 * 60 + end_sec
-        end[2] -= 1
-        if end[2] == 0:
-            end[2] += days_of_month[end[1] - 1]
-        return end_sec - start_sec
-
-
-def countDays():
-    if end[2] > start[2]:
-        return end[2] - start[2]
-    else:
-        end[1] -= 1
-        if end[1] == 0:
-            end[1] = 12
-            end[0] -= 1
-        return days_of_month[end[1] - 1] + end[2] - start[2]
+year_in_sec = start[0] * 365 * 24 * 60 * 60
+month_in_sec = sum(days_of_month[:start[1] - 1]) * 24 * 60 * 60
+day_in_sec = start[2] * 24 * 60 * 60
+hour_in_sec = start[3] * 60 * 60
+min_in_sec = start[4] * 60
+sec_start = year_in_sec + month_in_sec + day_in_sec + hour_in_sec + min_in_sec + start[5]
 
 
-def countDayFromMonth():
-    end_day = sum(days_of_month[:end[1] - 1])
-    start_day = sum(days_of_month[:start[1]])
-    if end_day > start_day:
-        return end_day - start_day
-    else:
-        end_day += 365
-        end[0] -= 1
-        return end_day - start_day
+diff = sec_end - sec_start
+days = diff // (24 * 60 * 60)
+sec = diff % (24 * 60 * 60)
 
-
-def countDayFromYear():
-    return (end[0] - start[0]) * 365
-
-
-sec = countSeconds()
-days = countDayFromMonth() + countDayFromYear() + countDays()
 with open('output.txt', 'w') as file:
     file.write(f"{days} {sec}\n")
